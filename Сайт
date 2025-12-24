@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>KOSTA GPT — умная нейросеть</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ===== СТИЛИ ===== -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Arial, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: radial-gradient(circle at top, #0f2027, #05070d 70%);
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    /* ===== ШАПКА ===== */
+    header {
+      text-align: center;
+      padding: 80px 20px 60px;
+    }
+
+    .logo {
+      font-size: 48px;
+      font-weight: 800;
+      background: linear-gradient(90deg, #00f0ff, #6a5cff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 25px rgba(0, 240, 255, 0.4);
+    }
+
+    .slogan {
+      margin-top: 20px;
+      font-size: 20px;
+      opacity: 0.9;
+    }
+
+    /* ===== КНОПКИ ===== */
+    .main-btn {
+      display: inline-block;
+      margin: 15px;
+      padding: 18px 42px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      background: linear-gradient(90deg, #00f0ff, #6a5cff);
+      box-shadow: 0 0 30px rgba(0, 240, 255, 0.6);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .main-btn:hover {
+      transform: scale(1.08);
+      box-shadow: 0 0 50px rgba(106, 92, 255, 0.9);
+    }
+
+    .download-btn {
+      background: linear-gradient(90deg, #00ff9d, #00c3ff);
+      box-shadow: 0 0 30px rgba(0, 255, 157, 0.6);
+    }
+
+    /* ===== СЕКЦИИ ===== */
+    section {
+      margin: 80px 0;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    /* ===== КАРТОЧКИ ===== */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 25px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 35px rgba(0, 240, 255, 0.4);
+    }
+
+    .card span {
+      font-size: 40px;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    /* ===== ПРЕИМУЩЕСТВА ===== */
+    .benefits {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .benefit {
+      font-size: 20px;
+      padding: 15px 30px;
+      border-radius: 30px;
+      background: linear-gradient(90deg, rgba(0,240,255,0.2), rgba(106,92,255,0.2));
+      border: 1px solid rgba(0,240,255,0.3);
+      box-shadow: 0 0 20px rgba(0,240,255,0.2);
+    }
+
+    /* ===== ПРЕВЬЮ ЧАТА ===== */
+    .chat-preview {
+      max-width: 500px;
+      margin: auto;
+      background: #0b0f1a;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 0 40px rgba(0, 240, 255, 0.3);
+    }
+
+    .chat-msg {
+      background: rgba(255,255,255,0.08);
+      padding: 12px 16px;
+      border-radius: 15px;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+
+    .chat-msg.bot {
+      border-left: 3px solid #00f0ff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .logo { font-size: 36px; }
+      .slogan { font-size: 16px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===== ГЛАВНЫЙ ЭКРАН ===== -->
+  <header>
+    <div class="logo">KOSTA GPT</div>
+    <div class="slogan">Твоя умная нейросеть — всегда под рукой</div>
+
+    <!-- КНОПКИ -->
+    <a href="#start" class="main-btn">🚀 Начать</a>
+    <a href="https://www.webintoapp.com/store/1043610"
+       target="_blank"
+       class="main-btn download-btn">
+       ⬇️ Скачать приложение
+    </a>
+  </header>
+
+  <div class="container">
+
+    <!-- ===== ВОЗМОЖНОСТИ ===== -->
+    <section>
+      <h2>🧠 Что умеет KOSTA GPT</h2>
+      <div class="cards">
+        <div class="card"><span>✍️</span>Генерация текстов</div>
+        <div class="card"><span>📚</span>Помощь в учёбе</div>
+        <div class="card"><span>💻</span>Создание сайтов и кода</div>
+        <div class="card"><span>💡</span>Идеи, сценарии, описания</div>
+      </div>
+    </section>
+
+    <!-- ===== ПРЕИМУЩЕСТВА ===== -->
+    <section>
+      <h2>🚀 Почему KOSTA GPT</h2>
+      <div class="benefits">
+        <div class="benefit">⚡ Быстро</div>
+        <div class="benefit">🆓 Бесплатно</div>
+        <div class="benefit">📱 Удобно</div>
+      </div>
+    </section>
+
+    <!-- ===== ПРЕВЬЮ ===== -->
+    <section>
+      <h2>🤖 Пример работы</h2>
+      <div class="chat-preview">
+        <div class="chat-msg">Придумай идею для сайта</div>
+        <div class="chat-msg bot">
+          Конечно! Давай создадим современный AI-сайт с неоном и анимациями ✨
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== МОБИЛЬНОСТЬ ===== -->
+    <section id="start">
+      <h2>📱 Работает на телефоне</h2>
+      <div class="cards">
+        <div class="card"><span>📲</span>Открывается прямо в браузере</div>
+        <div class="card"><span>🔒</span>Без регистрации</div>
+      </div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="https://www.webintoapp.com/store/1043610"
+           target="_blank"
+           class="main-btn download-btn">
+           ⬇️ Скачать KOSTA GPT
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 KOSTA GPT — нейросеть нового поколения
+  </footer>
+
+  <script>
+    // Скрипт для проверки загрузки страницы
+    console.log("KOSTA GPT сайт загружен");
+  </script>
+
+</body>
+</html>
